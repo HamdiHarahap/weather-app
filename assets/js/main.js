@@ -69,11 +69,13 @@ inputCity.addEventListener('keypress', function (e) {
 	if (e.key === 'Enter') {
 		checkWeather(inputCity.value)
 		inputCity.blur()
+		inputCity.value = ''
 	}
 })
 
 searchBtn.addEventListener('click', function () {
 	checkWeather(inputCity.value)
+	inputCity.value = ''
 })
 
 navigator.geolocation.getCurrentPosition(

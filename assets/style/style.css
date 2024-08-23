@@ -112,3 +112,14 @@ body {
 .info {
 	text-align: start;
 }
+
+@media screen and (max-width: 768px) {
+	body {
+		align-items: start;
+	}
+
+	.card {
+		justify-content: start;
+		margin-top: 50px;
+	}
+}

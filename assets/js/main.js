@@ -68,6 +68,7 @@ function updateWeatherIcon(weatherMain) {
 inputCity.addEventListener('keypress', function (e) {
 	if (e.key === 'Enter') {
 		checkWeather(inputCity.value)
+		inputCity.blur()
 	}
 })
 
